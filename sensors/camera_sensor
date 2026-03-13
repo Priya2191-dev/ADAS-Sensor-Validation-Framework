@@ -1,1 +1,4 @@
+class CameraSensor:
 
+    def detect_object(self, object_visible):
+        return object_visible
