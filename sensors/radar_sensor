@@ -1,1 +1,9 @@
+class RadarSensor:
 
+    def __init__(self, max_distance=150):
+        self.max_distance = max_distance
+
+    def get_object_distance(self, distance):
+        if distance <= self.max_distance:
+            return distance
+        return None
