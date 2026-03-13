@@ -14,7 +14,7 @@ Automation framework for validating ADAS sensor functionality.
 
 ## Open in Google Collab
 
-https://colab.research.google.com/drive/1yJRC6I5QsG3XoMhoeFiViuUokXhGBT9g#scrollTo=N-eT0Ua1ApEn
+https://github.com/Priya2191-dev/ADAS-Sensor-Validation-Framework/tree/main/notebooks
 
 ## Tech Stack
 
