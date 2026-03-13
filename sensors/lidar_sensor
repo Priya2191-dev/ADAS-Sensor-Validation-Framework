@@ -1,1 +1,11 @@
+import random
 
+class LidarSensor:
+
+    def __init__(self, range_meters=100):
+        self.range = range_meters
+
+    def detect_obstacle(self, distance):
+        if distance <= self.range:
+            return True
+        return False
