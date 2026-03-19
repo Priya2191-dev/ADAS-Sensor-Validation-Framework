@@ -1,4 +1,4 @@
-from src.ttc import time_to_collision
+from ttc import time_to_collision
 
 def test_ttc_basic():
     assert time_to_collision(100, 20) == 5
