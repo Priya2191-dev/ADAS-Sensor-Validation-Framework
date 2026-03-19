@@ -1,5 +1,5 @@
 from behave import given, then
-from src.ttc import time_to_collision
+from ttc import time_to_collision
 
 @given('distance {distance:d} and speed {speed:d}')
 def step_input(context, distance, speed):
