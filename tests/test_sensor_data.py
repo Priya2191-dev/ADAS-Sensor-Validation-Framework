@@ -1,4 +1,4 @@
-from src.sensor_data import validate_sensor_data
+from sensor_data import validate_sensor_data
 
 def test_valid_data():
     assert validate_sensor_data([10, 5, 3]) is True
