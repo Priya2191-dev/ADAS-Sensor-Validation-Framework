@@ -1,4 +1,4 @@
-from src.obstacle_detection import detect_obstacles
+from obstacle_detection import detect_obstacles
 
 def test_detect_obstacles_basic():
     assert detect_obstacles([10, 2, 3, 7], 5) == [2, 3]
