@@ -27,15 +27,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # 4. Run Pytest (Unit Tests)
-    - name: Run Pytest
+    # 4. Run Pytest (Unit Tests) and BDD test
+    - name: Run tests
+      env:
+        PYTHONPATH: ${{  github.workspace }}/src
       run: |
         pytest -v
-
-    # 5. Run BDD Tests (Behave)
-    - name: Run Behave Tests
-      run: |
-        behave
+        behave -v
 
     # 6. Generate Test Summary
     - name: Test Summary
