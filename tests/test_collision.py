@@ -1,4 +1,4 @@
-from src.collision_warning import collision_warning
+from collision_warning import collision_warning
 
 def test_collision_true():
     assert collision_warning(3, 4) is True
