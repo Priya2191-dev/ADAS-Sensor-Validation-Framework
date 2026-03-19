@@ -1,4 +1,4 @@
-from src.sensor_fusion import sensor_fusion
+from sensor_fusion import sensor_fusion
 
 def test_basic_fusion():
     assert sensor_fusion([10], [20]) == [15]
