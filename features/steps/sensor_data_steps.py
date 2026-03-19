@@ -1,5 +1,5 @@
 from behave import given, then
-from src.sensor_data import validate_sensor_data
+from sensor_data import validate_sensor_data
 
 @given('sensor values "{data}"')
 def step_input(context, data):
