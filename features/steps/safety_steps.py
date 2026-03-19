@@ -1,5 +1,5 @@
 from behave import given, then
-from src.safety_scenario import safety_scenario
+from safety_scenario import safety_scenario
 
 @given('speed is {speed:d} and obstacle distance is {distance:d}')
 def step_input(context, speed, distance):
