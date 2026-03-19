@@ -1,5 +1,5 @@
 from behave import given, then
-from src.collision_warning import collision_warning
+from collision_warning import collision_warning
 
 @given('distance is {distance:d}')
 def step_distance(context, distance):
