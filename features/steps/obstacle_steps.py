@@ -1,5 +1,5 @@
 from behave import given, when, then
-from src.obstacle_detection import detect_obstacles
+from obstacle_detection import detect_obstacles
 
 @given('sensor data "{data}"')
 def step_sensor_data(context, data):
