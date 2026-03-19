@@ -1,4 +1,4 @@
-from src.aeb import apply_brakes
+from aeb import apply_brakes
 
 def test_brake_applied():
     assert apply_brakes(2, 3) is True
