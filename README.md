@@ -49,7 +49,7 @@ This project demonstrates:
 
   Reduce collision impact, automate emergency response, enhance vehicle safety system.
 
-## Installation
+## Installations
 
 git clone https://github.com/Priya2191-dev/ADAS-sensor-validation-framework.git
 
@@ -63,12 +63,12 @@ Run the ADAS sensor validation framework demo
 
 [Open in Google collab] (https://colab.research.google.com/github/Priya2191-dev/ADAS-sensor-validation-framework/blob/main/notebook/ADAS-bus-validation-framework.ipynb)
 
-## Tests
+## Testing
 
 - Automation Testing (Pytest + BDD)
 - CI/CD Integration
 
-## Usage
+## Usages
 
 Run Tests:
 
