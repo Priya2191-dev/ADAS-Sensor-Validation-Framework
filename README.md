@@ -21,19 +21,41 @@ This project demonstrates:
 
 ## Features
 
-- Obstacle Detection  
-- Collision Warning  
-- Safety Scenario Testing  
-- Sensor Data Validation  
-- Sensor Fusion  
-- Time To Collision (TTC)  
-- Autonomous Emergency Braking (AEB)
+- Obstacle Detection:
+  
+  Detects obstacles within safety threshold.
+  
+- Collision Warning:
+  
+  Triggers warning when object is too close, to ensure timely alerts for warning collision.
+  
+- Safety Scenario Testing:
+
+  Detects high risk driving conditions, validates safety logic, ensure reliability under extreme scenarios.
+  
+- Sensor Data Validation:
+
+  Validate integrity of sensor data, prevents system failure due to bad inputs, ensure reliable decision making.
+  
+- Sensor Fusion:
+
+  Improves detection accuracy, reduce sensor noise and uncertainity, enhance decision making.
+  
+- Time To Collision (TTC):
+
+  Predict collision timing, support warning & braking system, improves safety decision making.
+  
+- Autonomous Emergency Braking (AEB):
+
+  Reduce collision impact, automate emergency response, enhance vehicle safety system.
 
 ## Installation
 
 git clone https://github.com/Priya2191-dev/ADAS-sensor-validation-framework.git
 
-cd ADAS-validation-sensor-framework pip install -r requirements.txt
+cd ADAS-validation-sensor-framework 
+
+pip install -r requirements.txt
 
 ## Interactive Simulation Demo
 
