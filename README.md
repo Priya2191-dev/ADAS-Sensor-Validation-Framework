@@ -54,15 +54,18 @@ pytest
 
 behave  
 
-## CI/
+## CI/CD
 
 GitHub Actions pipeline runs pytest and behave automatically.
 
 ## Technologies
-- python
+
+- numpy
+- pandas
 - pytest
 - behave
 
 ## Author
+
 Priyanka Lale
 
