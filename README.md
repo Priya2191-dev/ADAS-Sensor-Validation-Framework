@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 Run the ADAS sensor validation framework demo
 
-[Open in Google collab] (https://colab.research.google.com/github/Priya2191-dev/ADAS-sensor-validation-framework/blob/main/notebook/ADAS-bus-validation-framework.ipynb)
+[Open in Google collab] (https://colab.research.google.com/github/Priya2191-dev/ADAS-sensor-validation-framework/blob/main/notebook/ADAS-sensor-validation-framework.ipynb)
 
 ## Testing
 
