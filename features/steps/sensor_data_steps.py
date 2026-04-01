@@ -15,6 +15,10 @@ def convert_to_list(data):
 def given_data(context, data):
     context.data = convert_to_list(data)
 
+@given('sensor values ""')
+def given_empty(context):
+    context.data = []
+
 @when('system validates sensor data')
 def when_validate(context):
     context.result = validate_sensor_data(context.data)
