@@ -1,10 +1,10 @@
 from behave import given, then
 from safety_scenario import safety_scenario
 
-@given('speed is {speed:d} and obstacle distance is {distance:d}')
+@given('speed is {speed} and obstacle distance is {distance}')
 def step_input(context, speed, distance):
-    context.speed = speed
-    context.distance = distance
+    context.speed = int(speed)
+    context.distance = int(distance)
 
 @then('safety result should be "{expected}"')
 def step_output(context, expected):
