@@ -8,5 +8,5 @@ def step_input(context, speed, distance):
 
 @then('safety result should be "{expected}"')
 def step_output(context, expected):
-    result = safety_scenario(context.speed, context.distance)
-    assert result == expected
+    context.result = safety_scenario(context.speed, context.distance)
+    assert context.result == expected
