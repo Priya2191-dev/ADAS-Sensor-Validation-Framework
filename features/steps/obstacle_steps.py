@@ -23,3 +23,7 @@ def when_threshold(context, threshold):
 def then_obstacles(context, expected):
     expected_list = parse_input(expected)
     assert context.result == expected_list
+
+@then('obstacles should be')
+def then_empty_obstacles(context):
+    assert context.result == []
