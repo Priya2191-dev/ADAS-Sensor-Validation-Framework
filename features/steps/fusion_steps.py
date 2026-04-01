@@ -12,24 +12,24 @@ def convert_to_list(data):
     return [float(x) for x in data.split(",")]
 
 @given('camera data "{camera}" and radar data "{radar}"')
-def step_given_input(context, camera, radar):
+def given_input(context, camera, radar):
     context.camera = convert_to_list(camera)
     context.radar = convert_to_list(radar)
 
 @given('camera data "" and radar data ""')
-def step_given_empty(context):
+def given_empty(context):
     context.camera = []
     context.radar = []
 
 @when('system performs sensor fusion')
-def step_when_fusion(context):
+def when_fusion(context):
     context.result = sensor_fusion(context.camera, context.radar)
 
 @then('fused result should be "{expected}"')
-def step_then_output(context, expected):
+def then_output(context, expected):
     expected_list = convert_to_list(expected)
     assert context.result == expected_list
 
 @then('fused result should be ""')
-def step_then_empty(context):
+def then_empty(context):
     assert context.result == []
