@@ -29,5 +29,5 @@ def then_obstacles(context, expected):
     assert context.result == expected_list
 
 @then('obstacles should be ""')
-def step_then_empty(context):
+def then_empty(context):
     assert context.result == []
