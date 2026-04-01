@@ -12,19 +12,19 @@ def convert_to_list(data):
     return [float(x) for x in data.split(",")]
 
 @given('sensor data "{data}"')
-def step_given_sensor_data(context, data):
+def given_sensor_data(context, data):
     context.sensor_data = convert_to_list(data)
 
 @given('sensor data ""')
-def step_given_empty_data(context):
+def given_empty_data(context):
     context.sensor_data = []
 
 @when('threshold is {threshold:d}')
-def step_when_threshold(context, threshold):
+def when_threshold(context, threshold):
     context.result = detect_obstacles(context.sensor_data, threshold)
 
 @then('obstacles should be "{expected}"')
-def step_then_obstacles(context, expected):
+def then_obstacles(context, expected):
     expected_list = convert_to_list(expected)
     assert context.result == expected_list
 
