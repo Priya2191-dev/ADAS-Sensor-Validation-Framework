@@ -2,9 +2,9 @@ from behave import given, when, then
 from collision_warning import collision_warning
 
 
-@given('distance is {distance:d}')
+@given('distance is {distance}')
 def given_distance(context, distance):
-    context.distance = distance
+    context.distance = float(distance)
 
 @when('system checks collision')
 def when_check(context):
