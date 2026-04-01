@@ -2,10 +2,10 @@ from behave import given, when, then
 from safety_scenario import safety_scenario
 
 
-@given('speed is {speed:d} and obstacle distance is {distance:d}')
+@given('speed is {speed} and obstacle distance is {distance}')
 def given_input(context, speed, distance):
-    context.speed = speed
-    context.distance = distance
+    context.speed = int(speed)
+    context.distance = int(distance)
 
 @when('system evaluates safely')
 def when_evaluate(context):
