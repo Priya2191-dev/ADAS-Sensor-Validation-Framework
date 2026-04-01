@@ -19,9 +19,9 @@ def given_sensor_data(context, data):
 def given_empty_data(context):
     context.sensor_data = []
 
-@when('threshold is {threshold:d}')
+@when('threshold is {threshold}')
 def when_threshold(context, threshold):
-    context.result = detect_obstacles(context.sensor_data, threshold)
+    context.result = detect_obstacles(context.sensor_data, float(threshold))
 
 @then('obstacles should be "{expected}"')
 def then_obstacles(context, expected):
