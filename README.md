@@ -40,7 +40,7 @@ This project demonstrates:
   
 - Sensor Fusion:
 
-  Combines camera & radar data & validates fused output consistency.Improves detection accuracy, reduce sensor noise and uncertainity,    enhance decision making.
+  Combines camera & radar data & validates fused output consistency.Improves detection accuracy, reduce sensor noise and uncertainity,   enhance decision making.
   
 - Time To Collision (TTC):
 
@@ -54,7 +54,7 @@ This project demonstrates:
 
 git clone https://github.com/Priya2191-dev/ADAS-sensor-validation-framework.git
 
-cd ADAS-validation-sensor-framework 
+cd ADAS-sensor-validation-framework 
 
 pip install -r requirements.txt
 
