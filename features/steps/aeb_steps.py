@@ -6,11 +6,9 @@ from aeb import apply_brakes
 def given_ttc(context, ttc):
     context.ttc = float(ttc)  
 
-
 @when('system evaluates braking')
 def when_evaluate(context):
     context.result = apply_brakes(context.ttc)
-
 
 @then('braking should be {expected}')
 def then_output(context, expected):
