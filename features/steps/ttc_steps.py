@@ -1,9 +1,8 @@
 from behave import given, when, then
 from ttc import time_to_collision
 
-
-@given('collision distance is {distance} and collision speed is {speed}')
-def given_input(context, distance, speed):
+@given('TTC input distance {distance} and speed {speed}')
+def step_given_ttc(context, distance, speed):
     context.distance = float(distance)
     context.speed = float(speed)
 
