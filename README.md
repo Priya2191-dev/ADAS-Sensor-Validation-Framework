@@ -1,5 +1,13 @@
 # 🚗 ADAS Sensor Validation Framework
 
+## Objective
+
+- Simulate ADAS features
+- Validate safety critical scenarios
+- Automate testing
+- Implement CI/CD
+- To generate automated testing reports using allure
+
 ##  Overview
 
 The ADAS Sensor Validation Framework is a Python-based automation testing project designed to simulate and validate key functionalities of Advanced Driver Assistance Systems (ADAS).
@@ -11,13 +19,6 @@ This project demonstrates:
 - Sensor fusion logic  
 - Automated testing using Pytest & BDD (Behave)  
 - CI/CD integration using GitHub Actions  
-
-##  Objectives
-
-- Simulate ADAS features  
-- Validate safety-critical scenarios  
-- Automate testing  
-- Implement CI/CD  
 
 ## Features
 
@@ -31,7 +32,7 @@ This project demonstrates:
   
 - Safety Scenario Testing:
 
-  Detects high risk driving conditions, validates safety logic, ensure reliability under extreme scenarios.
+  Classifies driving conditions: Safe, Moderate & High Risk.
   
 - Sensor Data Validation:
 
@@ -39,15 +40,15 @@ This project demonstrates:
   
 - Sensor Fusion:
 
-  Improves detection accuracy, reduce sensor noise and uncertainity, enhance decision making.
+  Combines camera & radar data & validates fused output consistency.Improves detection accuracy, reduce sensor noise and uncertainity,    enhance decision making.
   
 - Time To Collision (TTC):
 
-  Predict collision timing, support warning & braking system, improves safety decision making.
+  Calculates collision risk using distance & speed. Handles edge cases (zero speed -> infinity).
   
 - Autonomous Emergency Braking (AEB):
 
-  Reduce collision impact, automate emergency response, enhance vehicle safety system.
+  Applies braking when TTC < threshold and validates safety critical decision logic.
 
 ## Installations
 
@@ -57,35 +58,41 @@ cd ADAS-validation-sensor-framework
 
 pip install -r requirements.txt
 
-## Interactive Simulation Demo
+## Tech Stack
 
-Run the ADAS sensor validation framework demo
+- Language: Python
+- Testing: Pytest, Behave(BDD)
+- CI/CD: Github Actions
+- Reporting: Allure Reports
 
-[Open in Google collab] (https://colab.research.google.com/github/Priya2191-dev/ADAS-sensor-validation-framework/blob/main/notebook/ADAS-sensor-validation-framework.ipynb)
+## Testing Strategy
 
-## Testing
-
-- Automation Testing (Pytest + BDD)
-- CI/CD Integration
-
-## Usages
-
-Run Tests:
-
-pytest 
-
-behave  
+- Unit Testing using Pytest
+- Behaviour Driven Testing using Behave
+- Edge Case Handling
+- Input Validation Testing
+- Invalid Case Testing
 
 ## CI/CD
 
-GitHub Actions pipeline runs pytest and behave automatically.
+- Runs on every push & pull request.
+- Executes:
 
-## Technologies
+  Pytest(Unit tests)
 
-- numpy
-- pandas
-- pytest
-- behave
+  Behave(BDD tests)
+
+- Generates:
+
+  Allure reports
+
+  Coverage reports
+
+## Reports & Outputs
+
+- Allure Test Reports
+- Behave Execution Logs
+- Coverage Report
 
 ## Author
 
