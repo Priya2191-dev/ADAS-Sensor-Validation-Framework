@@ -1,12 +1,19 @@
-from behave import given, then
+from behave import given, when, then
 from ttc import time_to_collision
 
-@given('distance {distance:d} and speed {speed:d}')
-def step_input(context, distance, speed):
-    context.distance = distance
-    context.speed = speed
 
-@then('TTC should be {expected:f}')
-def step_output(context, expected):
-    result = time_to_collision(context.distance, context.speed)
-    assert round(result, 2) == round(expected, 2)
+@given('distance is {distance} and speed is {speed}')
+def given_input(context, distance, speed):
+    context.distance = float(distance)
+    context.speed = float(speed)
+
+@when('system calculates TTC')
+def when_calculate(context):
+    context.result = time_to_collision(context.distance, context.speed)
+
+@then('TTC should be {expected}')
+def then_output(context, expected):
+    if expected == "inf":
+        assert context.result == float('inf')
+    else:
+        assert round(context.result, 2) == round(float(expected), 2)
