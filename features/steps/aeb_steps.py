@@ -10,7 +10,7 @@ def given_ttc(context, ttc):
 def when_evaluate(context):
     context.result = apply_brakes(context.ttc)
 
-@then('braking should be {expected}')
+@then('braking should be "{expected}"')
 def then_output(context, expected):
     expected_bool = expected.lower() == "true"
     assert context.result == expected_bool
