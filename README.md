@@ -94,6 +94,10 @@ pip install -r requirements.txt
 - Behave Execution Logs
 - Coverage Report
 
+## Conclusion
+
+Successfully tested a Python-based automation testing framework to validate key components of an Advance Driver Assistance System (ADAS),focusing on safety critical features such as collision detection, Time-To-Collision(TTC),and Autonomous Emergency Braking(AEB). 
+
 ## Author
 
 Priyanka Lale
