@@ -1,4 +1,4 @@
-name: Vehicle Brake Automation CI Pipeline
+name: ADAS Sensor Validation Framework CI Pipeline
 
 on:
   push:
